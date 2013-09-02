@@ -1,0 +1,42 @@
+{
+	// Colors
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"theme": "Soda Dark 3.sublime-theme",
+	"soda_classic_tabs": true,
+
+	// Font
+	"font_face": "Consolas",
+    "line_padding_bottom": 0,
+    "line_padding_top": 0,
+
+	// Cursor style
+	"caret_style": "phase",
+	"wide_caret": false,
+
+	// Editor view - look and fiel
+	"draw_white_space": "selection",
+	"highlight_line": true,
+	"always_show_minimap_viewport": true,
+	"auto_complete": false,
+	"indent_guide_options":	[ "draw_active"	],
+
+	// Editor behavior
+	"scroll_past_end": false,
+	"highlight_modified_tabs": true,
+	"find_selected_text": true,
+
+	// Word wrapping
+	"rulers": [ 80,	120	],
+	"word_wrap": true,
+	"wrap_width": 80,
+
+	// Whitespace
+	"tab_size": 4,
+	"ensure_newline_at_eof_on_save": true,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"shift_tab_unindent": true,
+
+	// Disable vim emulation
+	"ignored_packages":	[ "Vintage"	],
+}

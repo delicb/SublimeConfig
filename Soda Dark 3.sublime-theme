@@ -1,0 +1,16 @@
+// TODO: For more customization options look:
+// https://github.com/buymeasoda/soda-theme/blob/master/Soda%20Dark%203.sublime-theme
+[
+    {
+        "class": "tabset_control",
+        "tab_overlap": 20,
+        "mouse_wheel_switch": true
+    },
+    {
+        "class": "tab_control",
+        "content_margin": [20, 3, 20, 3],
+        "max_margin_trim": 0,
+        "hit_test_level": 0.0,
+        "layer0.opacity": 1.0
+    }
+]

@@ -1,0 +1,15 @@
+[
+    // ctrl+enter adds new line after current line
+    // and this ensures that shift+enter inserts new line before current line
+    { "keys": ["shift+enter"], "command": "run_macro_file", "args":
+        {"file": "Packages/Default/Add Line Before.sublime-macro"} },
+
+    // move lines with alt+up and alt+down
+    { "keys": ["alt+up"], "command": "swap_line_up" },
+    { "keys": ["alt+down"], "command": "swap_line_down" },
+
+    // Delete a line with shift+backspace
+    { "keys": ["shift+backspace"], "command": "run_macro_file", "args": {
+        "file": "Packages/Default/Delete Line.sublime-macro"
+    }},
+]
