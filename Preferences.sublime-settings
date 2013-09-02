@@ -27,7 +27,7 @@
 
 	// Word wrapping
 	"rulers": [ 80,	120	],
-	"word_wrap": true,
+	"word_wrap": false,
 	"wrap_width": 80,
 
 	// Whitespace
