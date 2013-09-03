@@ -1,8 +1,10 @@
 {
 	"installed_packages":
 	[
+		"GenerateUUID",
 		"Mercurial",
 		"Pretty JSON",
+		"Restructured Text (RST) Snippets",
 		"SideBarEnhancements",
 		"SublimeREPL",
 		"Theme - Soda",
