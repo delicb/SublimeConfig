@@ -60,6 +60,9 @@
 				<string>#CC6666</string>
 			</dict>
 		</dict>
+
+		<!-- add by Bojan Delic -->
+		<!-- Different collor for attribute names (e.g. XML attribute) -->
 		<dict>
 			<key>name</key>
 			<string>XML attribute name</string>
@@ -71,6 +74,8 @@
 				<string>#CFA1A1</string>
 			</dict>
 		</dict>
+		<!-- end -->
+
 		<dict>
 			<key>name</key>
 			<string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
@@ -249,6 +254,232 @@
 				<string>#3e999f</string>
 			</dict>
 		</dict>
+
+		<!-- add by Bojan Delic -->
+		<!-- Different collor for attribute names (e.g. XML attribute) -->
+		<!-- log messages -->
+		<dict>
+			<key>name</key>
+			<string>Log datetime</string>
+			<key>scope</key>
+			<string>log.datetime</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#696969</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Screenshot message</string>
+			<key>scope</key>
+			<string>log.message.screenshot</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#525252</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Trace message</string>
+			<key>scope</key>
+			<string>log.message.trace</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#525252</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Debug message</string>
+			<key>scope</key>
+			<string>log.message.debug</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#787878</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Info message</string>
+			<key>scope</key>
+			<string>log.message.info</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9E9E9E</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Warning message</string>
+			<key>scope</key>
+			<string>log.message.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C9C9C9</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Started message</string>
+			<key>scope</key>
+			<string>log.message.started</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#787878</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Warning message</string>
+			<key>scope</key>
+			<string>log.message.error, log.message.fatal, log.message.failed, log.message.skipped</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Log trace</string>
+			<key>scope</key>
+			<string>log.keyword.trace</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#A1E6CC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log debug</string>
+			<key>scope</key>
+			<string>log.keyword.debug</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#57D9A9</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log info</string>
+			<key>scope</key>
+			<string>log.keyword.info</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3BCCCC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log warning</string>
+			<key>scope</key>
+			<string>log.keyword.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#D066D4</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log error</string>
+			<key>scope</key>
+			<string>log.keyword.error</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FC6262</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log fatal</string>
+			<key>scope</key>
+			<string>log.keyword.fatal</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF0000</string>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log started</string>
+			<key>scope</key>
+			<string>log.keyword.started</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#A4ACED</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log succeeded</string>
+			<key>scope</key>
+			<string>log.keyword.succeeded</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00FF00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log failed</string>
+			<key>scope</key>
+			<string>log.keyword.failed</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF0000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Log skipped</string>
+			<key>scope</key>
+			<string>log.keyword.skipped</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFFF00</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Log screenshot</string>
+			<key>scope</key>
+			<string>log.keyword.screenshot</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DCDEA2</string>
+			</dict>
+		</dict>
+
+		<!-- end -->
 	</array>
 	<key>uuid</key>
 	<string>4C283591-457D-416F-83D2-8B535802D6F0</string>
