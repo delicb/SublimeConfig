@@ -1,7 +1,9 @@
 {
 	"installed_packages":
 	[
+		"Mercurial",
 		"Pretty JSON",
+		"SideBarEnhancements",
 		"SublimeREPL",
 		"Theme - Soda",
 		"Tomorrow Color Schemes"

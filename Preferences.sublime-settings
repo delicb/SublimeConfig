@@ -27,8 +27,7 @@
 
 	// Word wrapping
 	"rulers": [ 80,	120	],
-	"word_wrap": false,
-	"wrap_width": 80,
+	"word_wrap": true,
 
 	// Whitespace
 	"tab_size": 4,
