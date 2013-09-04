@@ -38,4 +38,38 @@
 
 	// Disable vim emulation
 	"ignored_packages":	[ "Vintage"	],
+
+	// Ignore these files in sidebar
+    "file_exclude_patterns": [
+        "*.pyc",
+        "*.pyo",
+        "*.exe",
+        "*.dll",
+        "*.obj",
+        "*.o",
+        "*.a",
+        "*.lib",
+        "*.so",
+        "*.dylib",
+        "*.ncb",
+        "*.sdf",
+        "*.suo",
+        "*.pdb",
+        "*.idb",
+        ".DS_Store",
+        "*.class",
+        "*.psd",
+        "*.db",
+        "*.sublime-workspace",
+        ".project",
+        ".pydevproject",
+        ".hgignore"
+    ],
+    "folder_exclude_patterns":
+    [
+        ".hg",
+        ".git",
+        ".settings",
+        "__pycache__"
+    ],
 }
