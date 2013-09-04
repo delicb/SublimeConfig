@@ -2,6 +2,7 @@
 	"installed_packages":
 	[
 		"GenerateUUID",
+		"INI",
 		"Mercurial",
 		"Pretty JSON",
 		"Restructured Text (RST) Snippets",
