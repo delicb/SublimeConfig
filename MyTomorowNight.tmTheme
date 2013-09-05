@@ -256,8 +256,7 @@
 		</dict>
 
 		<!-- add by Bojan Delic -->
-		<!-- Different collor for attribute names (e.g. XML attribute) -->
-		<!-- log messages -->
+		<!-- Define colors for log messages -->
 		<dict>
 			<key>name</key>
 			<string>Log datetime</string>
@@ -490,8 +489,44 @@
 				<string>#DCDEA2</string>
 			</dict>
 		</dict>
-
 		<!-- end -->
+
+        <!-- add by Bojan Delic -->
+        <!-- Define colors for vsc gutter -->
+        <dict>
+            <key>name</key>
+            <string>diff.deleted</string>
+            <key>scope</key>
+            <string>markup.deleted</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#F92672</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>diff.inserted</string>
+            <key>scope</key>
+            <string>markup.inserted</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#A6E22E</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>diff.changed</string>
+            <key>scope</key>
+            <string>markup.changed</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#967EFB</string>
+            </dict>
+        </dict>
+        <!-- end -->
 	</array>
 	<key>uuid</key>
 	<string>4C283591-457D-416F-83D2-8B535802D6F0</string>

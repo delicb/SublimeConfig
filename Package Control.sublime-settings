@@ -3,7 +3,6 @@
 	[
 		"GenerateUUID",
 		"Git Config",
-		"GitGutter",
 		"INI",
 		"Jedi - Python autocompletion",
 		"Mercurial",
@@ -12,6 +11,7 @@
 		"SideBarEnhancements",
 		"SublimeREPL",
 		"Theme - Soda",
-		"Tomorrow Color Schemes"
+		"Tomorrow Color Schemes",
+		"VCS Gutter"
 	]
 }
