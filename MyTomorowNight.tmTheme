@@ -356,6 +356,18 @@
 
 		<dict>
 			<key>name</key>
+			<string>Log source</string>
+			<key>scope</key>
+			<string>log.message.source</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#787D41</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
 			<string>Log trace</string>
 			<key>scope</key>
 			<string>log.keyword.trace</string>

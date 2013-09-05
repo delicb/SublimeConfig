@@ -14,7 +14,7 @@
     <array>
         <dict>
             <key>begin</key>
-            <string>^(.*) \| (TRACE) \| (.*)</string>
+            <string>^(.*)\s+(TRACE) - (.*) (\[.*\])?</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -32,13 +32,18 @@
                     <key>name</key>
                     <string>log.message.trace.text.logs</string>
                 </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.source.text.logs</string>
+                </dict>
             </dict>
             <key>end</key>
             <string>$</string>
         </dict>
         <dict>
             <key>begin</key>
-            <string>^(.*) \| (DEBUG) \| (.*)</string>
+            <string>^(.*)\s+(DEBUG) - (.*) (\[.*\])?</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -56,13 +61,18 @@
                     <key>name</key>
                     <string>log.message.debug.text.logs</string>
                 </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.source.text.logs</string>
+                </dict>
             </dict>
             <key>end</key>
             <string>$</string>
         </dict>
         <dict>
             <key>begin</key>
-            <string>^(.*) \| (INFO) \| (.*)</string>
+            <string>^(.*)\s+(INFO) - (.*) (\[.*\])?</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -80,13 +90,18 @@
                     <key>name</key>
                     <string>log.message.info.text.logs</string>
                 </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.source.text.logs</string>
+                </dict>
             </dict>
             <key>end</key>
             <string>$</string>
         </dict>
         <dict>
             <key>begin</key>
-            <string>^(.*) \| (WARNING) \| (.*)</string>
+            <string>^(.*)\s+(WARN) - (.*) (\[.*\])?</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -104,13 +119,18 @@
                     <key>name</key>
                     <string>log.message.warning.text.logs</string>
                 </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.source.text.logs</string>
+                </dict>
             </dict>
             <key>end</key>
             <string>$</string>
         </dict>
         <dict>
             <key>begin</key>
-            <string>^(.*) \| (ERROR) \| (.*)</string>
+            <string>^(.*)\s+(ERROR) - (.*) (\[.*\])?</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -128,13 +148,18 @@
                     <key>name</key>
                     <string>log.message.error.text.logs</string>
                 </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.source.text.logs</string>
+                </dict>
             </dict>
             <key>end</key>
             <string>$</string>
         </dict>
         <dict>
             <key>begin</key>
-            <string>^(.*) \| (FATAL) \| (.*)</string>
+            <string>^(.*)\s+(FATAL) - (.*) (\[.*\])?</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -152,13 +177,18 @@
                     <key>name</key>
                     <string>log.message.fatal.text.logs</string>
                 </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.source.text.logs</string>
+                </dict>
             </dict>
             <key>end</key>
             <string>$</string>
         </dict>
         <dict>
             <key>begin</key>
-            <string>^(.*) \| (STARTED) \| (.*)</string>
+            <string>^(.*)\s+(STARTED) - (.*) (\[.*\])?</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -176,13 +206,18 @@
                     <key>name</key>
                     <string>log.message.started.text.logs</string>
                 </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.source.text.logs</string>
+                </dict>
             </dict>
             <key>end</key>
             <string>$</string>
         </dict>
         <dict>
             <key>begin</key>
-            <string>^(.*) \| (FAILED) \| (.*)</string>
+            <string>^(.*)\s+(FAILED) - (.*) (\[.*\])?</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -200,13 +235,18 @@
                     <key>name</key>
                     <string>log.message.failed.text.logs</string>
                 </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.source.text.logs</string>
+                </dict>
             </dict>
             <key>end</key>
             <string>$</string>
         </dict>
         <dict>
             <key>begin</key>
-            <string>^(.*) \| (SUCCEEDED) \| (.*)</string>
+            <string>^(.*)\s+(SUCCEEDED) - (.*) (\[.*\])?</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -224,13 +264,18 @@
                     <key>name</key>
                     <string>log.message.succeeded.text.logs</string>
                 </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.source.text.logs</string>
+                </dict>
             </dict>
             <key>end</key>
             <string>$</string>
         </dict>
         <dict>
             <key>begin</key>
-            <string>^(.*) \| (SKIPPED) \| (.*)</string>
+            <string>^(.*)\s+(SKIPPED) - (.*) (\[.*\])?</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -248,13 +293,18 @@
                     <key>name</key>
                     <string>log.message.skipped.text.logs</string>
                 </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.source.text.logs</string>
+                </dict>
             </dict>
             <key>end</key>
             <string>$</string>
         </dict>
         <dict>
             <key>begin</key>
-            <string>^(.*) \| (SCREENSHOT) \| (.*)</string>
+            <string>^(.*)\s+(SCREENSHOT) - (.*) (\[.*\])?</string>
             <key>captures</key>
             <dict>
                 <key>1</key>
@@ -272,9 +322,20 @@
                     <key>name</key>
                     <string>log.message.screenshot.text.logs</string>
                 </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.source.text.logs</string>
+                </dict>
             </dict>
             <key>end</key>
             <string>$</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>\s+at.*</string>
+            <key>name</key>
+            <string>log.message.error.text.logs</string>
         </dict>
     </array>
     <key>scopeName</key>
