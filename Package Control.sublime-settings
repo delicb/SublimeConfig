@@ -2,8 +2,10 @@
 	"installed_packages":
 	[
 		"GenerateUUID",
-		"Jedi - Python autocompletion",
+		"Git Config",
+		"GitGutter",
 		"INI",
+		"Jedi - Python autocompletion",
 		"Mercurial",
 		"Pretty JSON",
 		"Restructured Text (RST) Snippets",
