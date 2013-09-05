@@ -1,0 +1,5 @@
+{
+    "pep8_ignore": ["E221", "E203"],
+    "open_pydoc_in_view": true,
+    "python_linter_mark_style": "none", // "none" or "outline"
+}
