@@ -24,6 +24,7 @@
 	"scroll_past_end": false,
 	"highlight_modified_tabs": true,
 	"find_selected_text": true,
+    "preview_on_click": false,
 
 	// Word wrapping
 	"rulers": [ 80,	120	],
