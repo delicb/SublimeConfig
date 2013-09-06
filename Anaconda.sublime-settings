@@ -1,0 +1,8 @@
+{
+    "suppress_word_completions": true,
+    "suppress_explicit_completions": true,
+    "complete_parameters": true,
+    "anaconda_gutter_marks": true,
+    "pep8_ignore": ["E221", "E203"],
+    "pep8_max_line_length": 100,
+}

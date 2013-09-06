@@ -1,4 +1,0 @@
-{
-    "ignore": ["E221", "E203"],
-    "max-line-length": 100
-}
