@@ -1,6 +1,10 @@
 [
     {
-        "caption": "Document viewer",
-        "command": "document_viewer",
+        "caption": "TailF",
+        "command": "tail_f",
+    },
+    {
+        "caption": "Stop TailF",
+        "command": "stop_tail_f",
     }
 ]
