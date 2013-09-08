@@ -55,6 +55,12 @@ class StopTailF(sublime_plugin.TextCommand):
     '''
     def run(self, edit):
         TAILF_VIEWS.remove(self.view.id())
+        # restore view to previous state
+        self.view.set_read_only(False)
+        self.view.set_scratch(False)
+
+    def description(self):
+        return 'Stops monitoring file on disk'
 
 
 class UpdateFile(sublime_plugin.TextCommand):
@@ -69,12 +75,8 @@ class UpdateFile(sublime_plugin.TextCommand):
             whole_file = sublime.Region(0, self.view.size())
             self.view.replace(edit, whole_file, content)
         self.view.set_read_only(read_only)
-        # this is something we should not do, but this is the only way I know
-        # to prevent 'File has changed on disk' sublime message when it gains
-        # focus.
-        # And we are just updating file form disk, not changing anything, so
-        # this should no cause any problems.
-        self.view.run_command('save')
+        # don't ask user if he want's to save changes to disk
+        self.view.set_scratch(True)
 
 
 class TailFEventListener(sublime_plugin.EventListener):
