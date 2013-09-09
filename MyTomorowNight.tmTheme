@@ -489,6 +489,30 @@
 				<string>#DCDEA2</string>
 			</dict>
 		</dict>
+
+        <dict>
+            <key>name</key>
+            <string>Log always</string>
+            <key>scope</key>
+            <string>log.message.always</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFF</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>Log always</string>
+            <key>scope</key>
+            <string>log.keyword.always</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#49AADE</string>
+            </dict>
+        </dict>
 		<!-- end -->
 
         <!-- add by Bojan Delic -->

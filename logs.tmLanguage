@@ -337,6 +337,54 @@
             <key>name</key>
             <string>log.message.error.text.logs</string>
         </dict>
+        <dict>
+            <key>begin</key>
+            <string>(.*) (DEBUGLOG): (.*)</string>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.datetime.text.logs</string>
+                </dict>
+                <key>2</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.keyword.debug.text.logs</string>
+                </dict>
+                <key>3</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.debug.text.logs</string>
+                </dict>
+            </dict>
+            <key>end</key>
+            <string>$</string>
+        </dict>
+        <dict>
+            <key>begin</key>
+            <string>(.*) (ALWAYS): (.*)</string>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.datetime.text.logs</string>
+                </dict>
+                <key>2</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.keyword.always.text.logs</string>
+                </dict>
+                <key>3</key>
+                <dict>
+                    <key>name</key>
+                    <string>log.message.always.text.logs</string>
+                </dict>
+            </dict>
+            <key>end</key>
+            <string>$</string>
+        </dict>
     </array>
     <key>scopeName</key>
     <string>text.log</string>
