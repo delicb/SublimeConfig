@@ -44,7 +44,7 @@ class TailF(sublime_plugin.TextCommand):
                                           args={'to': 'eof', 'extend': False})
                     self.prev_file_size = new_size
                     self.prev_mod_time = new_mod_time
-                time.sleep(0.5)
+                time.sleep(self.view.settings().get('tailf_pull_rate'))
             else:
                 return
 

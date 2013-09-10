@@ -49,4 +49,7 @@
 		"*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb",
 		".DS_Store", "*.class", "*.psd", "*.db", "*.sublime-workspace",
 		".project", ".pydevproject"],
+
+    // Tail-f settings
+    "tailf_pull_rate": 0.5,
 }
