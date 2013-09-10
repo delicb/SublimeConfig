@@ -19,6 +19,7 @@
     "always_show_minimap_viewport": true,
     "auto_complete": false,
     "indent_guide_options": [ "draw_active" ],
+    "bold_folder_labels": true,
 
     // Editor behavior
     "scroll_past_end": false,

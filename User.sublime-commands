@@ -6,5 +6,9 @@
     {
         "caption": "Stop TailF",
         "command": "stop_tail_f",
+    },
+    {
+        "caption": "ToDo markers",
+        "command": "todo",
     }
 ]
