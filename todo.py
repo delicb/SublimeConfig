@@ -4,7 +4,7 @@ import sublime_plugin
 
 
 FLAGS = sublime.DRAW_EMPTY | sublime.DRAW_NO_FILL | sublime.DRAW_NO_OUTLINE
-ICON = 'Packages/User/done.png'
+ICON = 'Packages/User/todo.png'
 TODO_PATTERN = re.compile(r'^\s*# ?TODO:\s*(.*)$')
 
 
