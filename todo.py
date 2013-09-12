@@ -19,34 +19,34 @@ class TodoCommand(sublime_plugin.TextCommand):
         self._icons = defaultdict(list)
 
     def run(self, edit):
+        icons = defaultdict(list)
         for line_range in self.view.lines(sublime.Region(0, self.view.size())):
             line = self.view.substr(line_range)
             # icon_set = False
             for pattern, icon in PATTERNS.items():
                 match = pattern.match(line)
                 if match:
-                    self._icons[icon].append(line_range)
-                else:
-                    try:
-                        self._icons[icon].remove(line_range)
-                    except ValueError:
-                        pass
-        self.refresh()
+                    icons[icon].append(line_range)
+        self.refresh(icons)
 
-    def refresh(self):
+    def refresh(self, icons):
         # remove all icons
-        for icon in self._icons.keys():
+        for icon in icons.keys():
             print('removing %s' % icon)
             self.view.add_regions('todo-%s' % icon,
                                   [sublime.Region(0, self.view.size())],
                                   'todo', '', FLAGS)
 
         # add all icons again
-        for icon, regions in self._icons.items():
+        for icon, regions in icons.items():
             self.view.add_regions('todo-%s' % icon, regions, 'todo',
                                   'Packages/User/%s.png' % icon, FLAGS)
 
 
 class TodoModifiedListener(sublime_plugin.EventListener):
     def on_modified(self, view):
+        view.run_command('todo')
+
+    def on_activated(self, view):
+        print('running on load for %s' % view.file_name())
         view.run_command('todo')
