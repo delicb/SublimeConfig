@@ -32,10 +32,7 @@ class TodoCommand(sublime_plugin.TextCommand):
     def refresh(self, icons):
         # remove all icons
         for icon in icons.keys():
-            print('removing %s' % icon)
-            self.view.add_regions('todo-%s' % icon,
-                                  [sublime.Region(0, self.view.size())],
-                                  'todo', '', FLAGS)
+            self.view.erase_regions('todo-%s' % icon)
 
         # add all icons again
         for icon, regions in icons.items():
