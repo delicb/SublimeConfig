@@ -9,6 +9,7 @@ import sublime_plugin
 
 # Set of IDs of view that are being monitored.
 TAILF_VIEWS = set()
+STATUS_KEY = 'tailf'
 
 
 class TailF(sublime_plugin.TextCommand):
@@ -25,6 +26,7 @@ class TailF(sublime_plugin.TextCommand):
         self.view.set_read_only(True)
         t = threading.Thread(target=self.thread_handler)
         TAILF_VIEWS.add(self.view.id())
+        self.view.set_status(STATUS_KEY, 'TailF mode')
         t.start()
 
     def thread_handler(self):
@@ -48,6 +50,9 @@ class TailF(sublime_plugin.TextCommand):
             else:
                 return
 
+    def description(self):
+        return 'Starts monitoring file on disk'
+
 
 class StopTailF(sublime_plugin.TextCommand):
     '''
@@ -58,6 +63,7 @@ class StopTailF(sublime_plugin.TextCommand):
         # restore view to previous state
         self.view.set_read_only(False)
         self.view.set_scratch(False)
+        self.view.erase_status(STATUS_KEY)
 
     def description(self):
         return 'Stops monitoring file on disk'
