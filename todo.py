@@ -4,7 +4,8 @@ import sublime
 import sublime_plugin
 
 
-FLAGS = sublime.DRAW_EMPTY | sublime.DRAW_NO_FILL | sublime.DRAW_NO_OUTLINE
+FLAGS = (sublime.DRAW_EMPTY | sublime.DRAW_NO_FILL | sublime.DRAW_NO_OUTLINE |
+         sublime.HIDE_ON_MINIMAP)
 PATTERNS = {
     re.compile(r'^\s*# ?TODO:\s*(.*)$'): 'todo',
     re.compile(r'^\s*# ?XXX:\s*(.*)$'): 'xxx',
