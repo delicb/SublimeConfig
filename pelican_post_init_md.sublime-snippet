@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+Title: ${1:Title}
+Slug: ${1/(.*)/\L\1/g}
+Author: Bojan Delić
+Date: ${2:2013-10-01 12:00}
+]]></content>
+    <tabTrigger>init</tabTrigger>
+    <description>Initial content for pelican blog post.</description>
+    <scope>text.html.markdown</scope>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+${1:Title}
+${1/./=/g}
+
+:slug: ${1/(.*)/\L\1/g}
+:author: Bojan Delić
+:date: ${2:2013-10-01 12:00}
+
+
+]]></content>
+    <tabTrigger>init</tabTrigger>
+    <description>Initial content for pelican blog post.</description>
+    <scope>text.restructuredtext</scope>
+</snippet>
