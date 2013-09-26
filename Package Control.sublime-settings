@@ -3,6 +3,7 @@
 	[
 		"Anaconda",
 		"GenerateUUID",
+		"Git",
 		"Git Config",
 		"INI",
 		"Pretty JSON",
